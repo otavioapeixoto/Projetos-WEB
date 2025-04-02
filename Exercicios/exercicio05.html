@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05 - Div e Span</title>
+    <style>
+        #textcolor{
+            color: darkcyan;
+        }
+        .cabeçalhoLogo{
+            background-color: rgb(140, 210, 240);
+        }
+        .cabeçalhoForm{
+            background-color: #76a8ab;
+        }
+        .lista{
+            background-color: #f5e8c6;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .destaque{
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabeçalhoLogo">
+           <img src="img/Logoipsum.svg"> 
+        </div>
+        <div class="cabeçalhoForm">
+            <form action="#">
+                <input type="text" name="nome">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="lista">
+            <ul>
+                <li>Música</li>
+                <li>Literatura</li>
+                <li>Fone</li>
+            </ul>
+        </div>
+        <div id="textcolor">
+            <p><span class="cabeçalhoLogo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> <span class="cabeçalhoForm">Veniam corporis suscipit a dicta, voluptates repellendus tempora nulla architecto quo,</span> recusandae eligendi <span class="destaque">expedita molestiae doloremque ipsum cum consequatur asperiores.</span> Sunt, numquam.</p>
+        </div>
+    </main>
+</body>
+</html>
