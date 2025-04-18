@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 10</title>
     <style>
-        body, html{
+        body, html, main{
             margin: 0px;
             padding: 0px;
             height: 100%;
         }
         header{
             background-color: rgb(203, 227, 205);
-            height: 115px;
+            overflow: auto;
         }
         .logo{
             float: left;
@@ -23,7 +23,10 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: rgb(76, 153, 59);
             font-size: 30px;
-            padding: 41px 0px 41px 50px;
+            padding: 40px 0px 40px 20px;
+        }
+        span{
+            padding: 0px 30px;
         }
         span:hover{
             color: rgb(37, 77, 28);
@@ -31,7 +34,7 @@
         }
         .form{
             float: right;
-            padding: 41px 10px 41px 0px;
+            padding: 40px 10px 40px 0px;
         }
         form{
             background-color: white;
@@ -42,6 +45,32 @@
         input{
             border: 0px;
             padding: 0px;
+        }
+        .img1, .img2, .img3, .img4{
+            height: 100%;
+            opacity: 0.7;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .img1{
+            background-image: url(img/Natureza1.gif);
+        }
+        .img2{
+            background-image: url(img/Natureza2.jpg);
+        }
+        .img3{
+            background-image: url(img/Natureza3.jpg);
+        }
+        .img4{
+            background-image: url(img/Natureza4.jpg);
+        }
+        .conteudo1{
+            background-image: url(img/Folhas.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     </style>
 </head>
@@ -63,5 +92,26 @@
             </form>
         </div>
     </header>
+    <main>
+        <div class="img1"></div>
+        <div class="conteudo1">
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
+            </p>
+        </div>
+        <div class="img2"></div>
+        <div class="conteudo2">
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
+            </p>
+        </div>
+        <div class="img3"></div>
+        <div class="conteudo3">
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
+            </p>
+        </div>
+        <div class="img4"></div>
+    </main>
 </body>
 </html>
