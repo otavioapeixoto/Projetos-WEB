@@ -51,12 +51,12 @@
             padding: 0px;
         }
         .img1, .img2, .img3, .img4{
+            position: relative;
             height: 100%;
             opacity: 0.7;
-            background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-size: cover;
+            background-attachment: fixed;
         }
         .img1{
             background-image: url(img/Natureza1.gif);
@@ -85,19 +85,21 @@
             margin-bottom: 30px;
             text-transform: lowercase;
         }
-        .posiçao{
+        .cont-img {
             position: absolute;
-            top:60%;
+            top: 45%;
             width: 100%;
             text-align: center;
         }
-        .titulo{
-            background-color: rgb(37, 77, 28);
-            color: rgb(203, 227, 205);
-            letter-spacing: 5px;
-            font-size: 20px;
+
+        .cont-img span.titulo {
+            background-color: rgb(13, 66, 13);
+            color: #ffffff;
             padding: 20px;
+            font-size: 20px;
+            letter-spacing: 5px;
         }
+        
     </style>
 </head>
 <body>
@@ -120,8 +122,8 @@
     </header>
     <main>
         <div class="img1">
-            <div class="posiçao">
-                <span class="titulo">NATUREZA É VIDA</span>
+            <div class="cont-img">
+                <span class="titulo">NATUREZA É REAL</span>
             </div>
         </div>
         <div class="conteudo">
@@ -129,27 +131,30 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
             </p>
         </div>
-        <div class="img2"></div>
-        <div class="posiçao">
-            <span class="titulo">NATUREZA</span>
+        <div class="img2">
+            <div class="cont-img">
+                <span class="titulo">NATUREZA É VIVA</span>
+            </div> 
         </div>
         <div class="conteudo">
             <h1>Lorem ipsum dolor</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
             </p>
         </div>
-        <div class="img3"></div>
-        <div class="posiçao">
-            <span class="titulo">NATUREZA É VIDA</span>
+        <div class="img3">
+            <div class="cont-img">
+                <span class="titulo">NATUREZA É NOSSA</span>
+            </div>
         </div>
         <div class="conteudo">
             <h1>Lorem ipsum dolor</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
             </p>
         </div>
-        <div class="img4"></div>
-        <div class="posiçao">
-            <span class="titulo">VIVA A NATUREZA</span>
+        <div class="img4">
+            <div class="cont-img">
+                <span class="titulo">NATUREZA É VIDA</span>
+            </div>
         </div>
     </main>
 </body>
