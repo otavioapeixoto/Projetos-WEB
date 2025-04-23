@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 10</title>
     <style>
-        *{
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+        * {
             margin: 0px;
-            padding: 0px;  
+            padding: 0px;
         }
-        body, html, main{
+
+        body,
+        html,
+        main {
             margin: 0px;
             padding: 0px;
             height: 100%;
         }
-        header{
+
+        header {
             background-color: rgb(203, 227, 205);
             overflow: auto;
         }
-        .logo{
+
+        .logo {
             float: left;
             padding: 10px;
         }
-        .menu{
+
+        .menu {
             float: left;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: 'Love Ya Like A Sister';
             color: rgb(76, 153, 59);
             font-size: 30px;
             padding: 40px 0px 40px 20px;
         }
-        .menubotoes{
+
+        .menubotoes {
             padding: 0px 30px;
         }
-        .menubotoes:hover{
+
+        .menubotoes:hover {
             color: rgb(37, 77, 28);
             cursor: pointer;
         }
-        .form{
+
+        .form {
             float: right;
             padding: 40px 10px 40px 0px;
         }
-        form{
+
+        form {
             background-color: white;
             border: solid rgb(37, 77, 28) 1px;
             border-radius: 10px;
             padding: 5px;
         }
-        input{
+
+        input {
             border: 0px;
             padding: 0px;
         }
-        .img1, .img2, .img3, .img4{
+
+        .img1,
+        .img2,
+        .img3,
+        .img4 {
             position: relative;
             height: 100%;
             opacity: 0.7;
@@ -58,19 +77,24 @@
             background-size: cover;
             background-attachment: fixed;
         }
-        .img1{
+
+        .img1 {
             background-image: url(img/Natureza1.gif);
         }
-        .img2{
+
+        .img2 {
             background-image: url(img/Natureza2.jpg);
         }
-        .img3{
+
+        .img3 {
             background-image: url(img/Natureza3.jpg);
         }
-        .img4{
+
+        .img4 {
             background-image: url(img/Natureza4.jpg);
         }
-        .conteudo{
+
+        .conteudo {
             background-color: rgb(203, 227, 205);
             color: rgb(37, 77, 28);
             text-align: justify;
@@ -80,11 +104,14 @@
             background-position: center;
             background-size: cover;
         }
-        h1{
+
+        h1 {
             text-align: center;
             margin-bottom: 30px;
             text-transform: lowercase;
+            font-family: 'Love Ya Like A Sister';
         }
+
         .cont-img {
             position: absolute;
             top: 45%;
@@ -97,11 +124,42 @@
             color: #ffffff;
             padding: 20px;
             font-size: 20px;
+            font-family: 'Special Elite';
             letter-spacing: 5px;
         }
-        
+        .rodape{
+            background-color: #e3e8dd;
+            overflow: auto;
+        }
+        .roda-titulo{
+            font-family: 'Love Ya Like A Sister';
+            color: rgb(37, 77, 28);
+            text-align: center;
+            margin: 0px;
+            padding: 20px;
+            font-size: 4em;
+        }
+        .roda-p{
+            font-family: 'Love Ya Like A Sister';
+            color: rgb(37, 77, 28);
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .roda-img{
+            text-align: center;
+            padding: 20px;
+        }
+        .icons{
+            border: 4px dotted rgb(37, 77, 28);
+            border-radius: 30px;
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            margin: 0px 10px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo"><img src="img/Logo_Nat.png"></div>
@@ -128,17 +186,29 @@
         </div>
         <div class="conteudo">
             <h1>Lorem ipsum dolor</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam
+                nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis.
+                Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt,
+                pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero
+                sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
             </p>
         </div>
         <div class="img2">
             <div class="cont-img">
                 <span class="titulo">NATUREZA É VIVA</span>
-            </div> 
+            </div>
         </div>
         <div class="conteudo">
             <h1>Lorem ipsum dolor</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam
+                nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis.
+                Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt,
+                pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero
+                sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
             </p>
         </div>
         <div class="img3">
@@ -148,7 +218,13 @@
         </div>
         <div class="conteudo">
             <h1>Lorem ipsum dolor</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis. Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt, pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae quibusdam voluptates quam nam
+                nihil reprehenderit excepturi quo dolor optio architecto dignissimos consectetur, eos sed corporis.
+                Doloribus nihil possimus temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aspernatur quis corrupti dolore? Quisquam veritatis perferendis explicabo quia quaerat! Incidunt,
+                pariatur! Soluta velit cumque error sit aliquid ipsam omnis ea aliquam. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Saepe voluptas quaerat voluptatibus totam iure minus culpa sint amet, vero
+                sed ipsam, veniam minima at quod doloremque dicta quae. Facere, dicta.
             </p>
         </div>
         <div class="img4">
@@ -156,6 +232,16 @@
                 <span class="titulo">NATUREZA É VIDA</span>
             </div>
         </div>
+        <div class="rodape">
+            <h1 class="roda-titulo">NATUREZA</h1>
+            <p class="roda-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum reiciendis eum id fugia</p>
+            <div class="roda-img">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="img/Icon_Face.png" class="icons"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="img/Icon_Whats.png" class="icons"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/Icon_Insta.png" class="icons"></a>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
