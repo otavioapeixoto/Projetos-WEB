@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Páscoa</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
         *{
-            margin: 0 auto;
+            margin: 0;
             padding: 0;
         }
-        main{
-            margin-top: 220px;
-        }
         header{
-            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -24,6 +20,7 @@
             background-color: #63240b;
             overflow: auto;
             border-top: 30px solid #ecd8a3;
+            border-bottom: solid 1px #ecd8a3;
         }
         .logo{
             float: left;
@@ -34,51 +31,9 @@
         h1{
             float: left;
             font-family: "Pacifico", cursive;
-            font-size: 80px;
+            font-size: 70px;
             color: #ecd8a3;
             padding: 25px 10px;
-        }
-        .menu{
-            background-color: #ecd8a3;
-            width: 100%;
-            height: 40px;
-        }
-        .menu ul{
-            padding: 0;
-            max-width: 500px;
-        }
-        .menu ul li{          
-            background-color: #ecd8a3;
-            color: white;
-            float: left;
-            width: 100px;
-            height: 40px;
-            display: inline-block;
-            text-align: center;
-            line-height: 40px;
-            position: relative;
-        }
-        .menu ul li:hover{
-            background-color:#63240b; 
-        }
-        
-        .menu ul ul{
-            display: none;
-        }
-        .menu ul li:hover > ul{
-            display: block;
-        }
-        
-        .menu ul ul ul{
-            margin-left: 102px;
-            position: absolute;
-            top: 0px;
-        }
-        .menu ul ul li:hover{
-            background-color:#63240b; 
-        }
-        .menu ul ul ul li:hover{
-            background-color:#341306; 
         }
         input {
             width: 10%;
@@ -90,7 +45,7 @@
             /*Características para colocar a imagem da Lupa dentro do Input*/
             padding: 5px;
             /*Características para posição dentro do cabeçalho*/
-            margin: 70px 5px 70px 180px;
+            margin: 70px 5px 70px 150px;
             float: left;
         }
         button{
@@ -100,7 +55,7 @@
             background-color: #ecd8a3;
             border: solid #ecd8a3 2px;
             border-radius: 10px;
-            color: white;
+            color: #63240b;
             float: left;
             cursor: pointer;
 
@@ -121,6 +76,102 @@
             padding: 0px 5px;
             cursor: pointer;
         }
+        .menu{
+            background-color: #ecd8a3;
+            width: 100%;
+            height: 40px;
+            font-family: "Gamja Flower", sans-serif;
+            font-size: 23px;
+            border-bottom: solid 1px #ecd8a3;
+        }
+        .menu ul{
+            padding: 0;
+            max-width: 750px;
+            margin: auto;
+        }
+        .menu ul li{          
+            background-color: #ecd8a3;
+            color: #63240b;
+            float: left;
+            width: 150px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+        .menu ul li:hover{
+            background-color:#63240b;
+            color: #ecd8a3;
+        }
+        
+        .menu ul ul{
+            display: none;
+        }
+        .menu ul li:hover > ul{
+            display: block;
+        }
+        
+        .menu ul ul ul{
+            margin-left: 152px;
+            position: absolute;
+            top: 0px;
+        }
+        .menu ul ul li:hover{
+            background-color:#63240b;
+
+        }
+        .menu ul ul ul li:hover{
+            background-color:#341306; 
+        }
+        .banner{
+            width: 100%;
+            border-bottom: 3px solid #ecd8a3;
+            display: block;
+        }
+        .produtos{
+            background-color: #341306;
+        }
+        .produtos h2{
+            text-align: center;
+            padding: 10px;
+            color: #ecd8a3;
+            font-family: "Gamja Flower", sans-serif;
+            font-size: 45px;
+        }
+        .produtos div{
+            text-align: center;
+        }
+        .produtos img{
+            width: 30%;
+            height: 280px;
+            margin: 12px;
+            border: 2px solid #ecd8a3;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: #ecd8a3;
+            border-top: #341306 10px solid;
+            border-bottom: #341306 10px solid;
+            overflow: auto;
+            font-family: "Gamja Flower", sans-serif;
+            padding: 25px 40px;
+        }
+        .contato{
+            float: left;
+            color: #63240b;
+        }
+        .endereço{
+            text-align: center;
+            float: left;
+            margin: 0px 320px;
+            color: #63240b;
+        }
+        footer img{
+            height: 70px;
+            width: 70px;
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -140,7 +191,7 @@
                     <a href=""><img src="img/LogoWhats.svg"></a>
                 </div>
             </div>
-            <div class="menu">
+            <nav class="menu">
                 <ul>
                     <li>HOME</li>
                     <li>DOCES
@@ -155,11 +206,55 @@
                                 </ul>
                             </li>
                         </ul>
-                    <li>OVOS</li>
-                    <li>CACHO DE UVA</li>
+                    <li>OVOS
+                        <ul>
+                            <li>AO LEITE</li>
+                            <li>MEIO AMARGO</li>
+                            <li>BRANCO</li>
+                            <li>TRUFADOS
+                                <ul>
+                                    <li>MARACUJÁ</li>
+                                    <li>MORANGO</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>CESTAS
+                        <ul>
+                            <li>CESTA DE AMOR</li>
+                            <li>CESTA KIDS</li>
+                            <li>CESTA PREMIUM</li>
+                        </ul>
+                    </li>
                     <li>SOBRE</li>
                 </ul>
-            </div>
+            </nav>
         </header>
+        <main>
+            <img src="img/BannerPascoa.jpg" class="banner">
+            <div class="produtos">
+                <h2>Nossos Principais Produtos:</h2>
+                <div>
+                    <img src="img/OvoPascoa1.jpg">
+                    <img src="img/OvoPascoa2.jpg">
+                    <img src="img/OvoPascoa3.jpg">
+                    <img src="img/OvoPascoa4.webp">
+                    <img src="img/OvoPascoa5.webp">
+                    <img src="img/OvoPascoa6.png">
+                </div>      
+            </div>
+        </main>
+        <footer>
+            <div class="contato">
+                <h3>Entre em Contato:</h3>
+                <p>(14)99999-1111</p>
+                <p>contato@gmail.com</p>
+            </div>
+            <div class="endereço">
+                <h2>Rua do Limoeiro, n°110 - Bairro do Limão</h2>
+                <h2>Santa Cruz do Rio Pardo</h2>
+            </div>
+            <img src="img/SeloChoco.png">
+        </footer>
 </body>
 </html>
