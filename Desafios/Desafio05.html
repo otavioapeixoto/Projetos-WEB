@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 05</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(220, 220, 220);
+        }
+        .cabeçalho{
+            background-color: black;
+            overflow: auto;
+            width: 100%;
+        }
+        .cabeçalho img{
+            width: 30px;
+        }
+        .menu{
+            color: white;
+            font-size: 20px;
+            margin: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            float: left;
+        }
+        .menu span{
+            margin-right: 20px;
+            transition: all 0.5s;
+        }
+        .menu span:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: all 0.5s;
+        }
+        .redes{
+            float: right;
+            margin-top: 12px;
+            margin-right: 15px;
+        }
+        .redes img{
+            margin-left: 10px;
+        }
+        main img{
+            display: block;
+        }
+        .conteudo1{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            background-color: rgb(220, 220, 220);
+        }
+        h2{
+            color: rgb(42, 42, 42);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        .noticias{
+            width: 1060px;
+        }
+        .noticias img{
+            width: 1060px;
+        }
+        .coluna{
+            width: 310px;
+        }
+        .coluna img{
+            width: 310px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <div class="menu">
+                <span>Home</span>
+                <span>Lazer</span>
+                <span>Esportes</span>
+                <span>Corridas</span>
+                <span>E-Sports</span>
+            </div>
+            <div class="redes">
+                <img src="img/LogoWhats.svg" alt="">
+                <img src="img/LogoInsta.svg" alt="">
+                <img src="img/LogoFace.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="img/BannerSesi.png" width="100%">
+        <div class="conteudo1">
+            <div class="noticias">
+                <h2>Notícias</h2>
+                <img src="img/BannerSesi2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam voluptas porro quod fugiat quae nisi officiis, et fugit modi esse saepe enim excepturi eveniet consectetur, maiores iusto pariatur. Tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt deserunt quia iusto natus facere impedit, in tempore optio quisquam consequuntur! Aperiam, soluta placeat? Ad, quae? Debitis architecto praesentium unde! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laudantium corporis numquam facilis, excepturi autem nobis recusandae repudiandae? Modi totam nostrum soluta eius maxime praesentium amet ratione quas saepe ad.</p>
+            </div>
+            <div class="coluna">
+                <h2>Coluna</h2>
+                <img src="img/Idoso.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam voluptas porro quod fugiat quae nisi officiis, et fugit modi esse saepe enim excepturi eveniet consectetur, maiores iusto pariatur. Tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt deserunt quia iusto natus facere impedit, in tempore optio quisquam consequuntur! Aperiam, soluta placeat? Ad, quae? Debitis architecto praesentium unde!</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

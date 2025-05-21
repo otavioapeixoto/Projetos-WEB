@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12 - Display flex</title>
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            color: aliceblue;
+            text-align: center;
+        }
+        .colaborador1, .colaborador2, .colaborador3, .colaborador4{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            border: solid 1px #001a23;
+            border-radius: 15px;
+            margin: 10px 0px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90%;
+            transition: all 1s;
+        }
+        .colaborador1:hover, .colaborador2:hover, .colaborador3:hover, .colaborador4:hover{
+            width: 350px;
+            height: 350px;
+            transition: all 1s;
+        }
+        .colaborador1{
+            background-image: url(img/face01.png);
+        }
+        .colaborador2{
+            background-image: url(img/face02.png);
+        }
+        .colaborador3{
+            background-image: url(img/face03.png);
+        }
+        .colaborador4{
+            background-image: url(img/face04.png);
+        }
+        .colaboradores{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Colaboradores</h1>
+    <div class="colaboradores">
+        <div class="colaborador1"></div>
+        <div class="colaborador2"></div>
+        <div class="colaborador3"></div>
+        <div class="colaborador4"></div>
+        <div class="colaborador1"></div>
+        <div class="colaborador2"></div>
+        <div class="colaborador3"></div>
+        <div class="colaborador4"></div>
+        <div class="colaborador1"></div>
+        <div class="colaborador2"></div>
+        <div class="colaborador3"></div>
+        <div class="colaborador4"></div>
+        <div class="colaborador1"></div>
+        <div class="colaborador2"></div>
+        <div class="colaborador3"></div>
+        <div class="colaborador4"></div>
+    </div>
+</body>
+</html>
