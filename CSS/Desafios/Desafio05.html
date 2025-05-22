@@ -11,14 +11,17 @@
         }
         body{
             background-color: rgb(220, 220, 220);
+            font-family: Arial, Helvetica, sans-serif;
         }
         .cabeçalho{
             background-color: black;
             overflow: auto;
             width: 100%;
+            position: fixed;
         }
         .cabeçalho img{
-            width: 30px;
+            width: 25px;
+            cursor: pointer;
         }
         .menu{
             color: white;
@@ -49,29 +52,54 @@
         main img{
             display: block;
         }
-        .conteudo1{
+        .conteudo1, .conteudo2{
             display: flex;
             justify-content: space-around;
-            margin-top: 20px;
-            background-color: rgb(220, 220, 220);
+            padding: 20px 0px;
         }
         h2{
             color: rgb(42, 42, 42);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 30px;
-            margin-left: 30px;
+            margin-left: 25px;
+            margin-bottom: 5px;
         }
         .noticias{
             width: 1060px;
+            text-align: justify;
         }
         .noticias img{
             width: 1060px;
+            margin-bottom: 10px;
         }
         .coluna{
             width: 310px;
+            text-align: justify;
         }
         .coluna img{
             width: 310px;
+            margin-bottom: 10px;
+        }
+        .conteudo2 img{
+            width: 300px;
+            height: 200px;
+            border: solid 2px white;
+            transition: all 0.5s;
+        }
+        .conteudo2 img:hover{
+            width: 330px;
+            height: 220px;
+            transition: all 0.5s;
+        }
+        .conteudo2 h2{
+            color: white;
+        }
+        .conteudo2{
+            background-color: rgb(42, 42, 42);
+        }
+        footer div{
+            text-align: center;
+            margin: 10px 0px;
         }
     </style>
 </head>
@@ -106,6 +134,30 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam voluptas porro quod fugiat quae nisi officiis, et fugit modi esse saepe enim excepturi eveniet consectetur, maiores iusto pariatur. Tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt deserunt quia iusto natus facere impedit, in tempore optio quisquam consequuntur! Aperiam, soluta placeat? Ad, quae? Debitis architecto praesentium unde!</p>
             </div>
         </div>
+        <div class="conteudo2">
+            <div>
+                <h2>Basquete</h2>
+                <img src="img/Basquete.webp" alt="">
+            </div>
+            <div>
+                <h2>Volei</h2>
+                <img src="img/Volei.webp" alt="">
+            </div>
+            <div>
+                <h2>Judo</h2>
+                <img src="img/Judo.webp" alt="">
+            </div>
+            <div>
+                <h2>Futebol</h2>
+                <img src="img/Futebol.png" alt="">
+            </div>
+        </div>
     </main>
+    <footer>
+        <div>
+            <p>© 2025 Projeto Acadêmico. Todos os direitos reservados. 😸</p>
+            <p>Santa Cruz do Rio Pardo - SENAI Multimídia</p>
+        </div>
+    </footer>
 </body>
 </html>
