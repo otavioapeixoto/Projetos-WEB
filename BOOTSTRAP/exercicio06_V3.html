@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca Viva</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bege: #fdf6e3;
+      --azul-escuro: #2c3e50;
+      --ciano: #a6e3e9;
+      --rosa: #ffc2d1;
+      --laranja: #ffdab9;
+    }
+
+    body {
+      background-color: var(--bege);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar, footer {
+      background-color: var(--azul-escuro);
+    }
+
+    .navbar-brand, .nav-link, footer p, footer a {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+      transition: all 0.3s ease;
+    }
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 400px;
+      background: no-repeat center center scroll;
+      background-size: cover;
+      position: relative;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    .livro-card {
+      background-color: var(--rosa);
+      border-radius: 12px;
+      padding: 0.5rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .livro-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .livro-card:hover {
+      transform: scale(1.05);
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 3rem 0 2rem;
+      color: var(--azul-escuro);
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .info-footer {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Biblioteca Viva</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#colecao">Coleções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#extras">Extras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel Fullscreen -->
+  <div id="carouselLivros" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('https://picsum.photos/seed/banner1/1920/1080');">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-white">Bem-vindo à Biblioteca Viva</h1>
+          <p>Descubra novos livros, autores e mundos sem sair de casa.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://picsum.photos/seed/banner2/1920/1080');"></div>
+      <div class="carousel-item" style="background-image: url('https://picsum.photos/seed/banner3/1920/1080');"></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLivros" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselLivros" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Coleções -->
+  <section id="colecao" class="container">
+    <h2 class="section-title">Coleções em Destaque</h2>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="livro-card shadow">
+          <img src="https://picsum.photos/seed/l1/200/300" alt="Livro 1">
+          <h6>Viagem ao Desconhecido</h6>
+          <p>Aventura • Ana Costa</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="livro-card shadow">
+          <img src="https://picsum.photos/seed/l2/200/300" alt="Livro 2">
+          <h6>O Som do Silêncio</h6>
+          <p>Drama • Cláudia Martins</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="livro-card shadow">
+          <img src="https://picsum.photos/seed/l3/200/300" alt="Livro 3">
+          <h6>Mistérios da Cidade</h6>
+          <p>Suspense • Rafael Lima</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="livro-card shadow">
+          <img src="https://picsum.photos/seed/l4/200/300" alt="Livro 4">
+          <h6>Encantos da Alma</h6>
+          <p>Poesia • Fernanda Lopes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extras com funcionalidades do Bootstrap -->
+  <section id="extras" class="container">
+    <h2 class="section-title">Explore Mais</h2>
+
+    <!-- Accordion -->
+    <div class="accordion mb-4" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Por que ler é importante?</button></h2>
+        <div id="collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">A leitura estimula o pensamento crítico, a empatia e o aprendizado contínuo ao longo da vida.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Como escolher um bom livro?</button></h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">Explore temas que você gosta, procure recomendações de autores confiáveis e experimente novos gêneros.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <h5>Meta de Leitura Anual</h5>
+    <div class="progress mb-4">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">60% alcançado</div>
+    </div>
+
+    <!-- Badges -->
+    <p>
+      Gêneros populares:
+      <span class="badge bg-primary">Aventura</span>
+      <span class="badge bg-success">Romance</span>
+      <span class="badge bg-danger">Suspense</span>
+      <span class="badge bg-warning text-dark">Fantasia</span>
+    </p>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="container">
+    <h2 class="section-title">Fale Conosco</h2>
+    <form class="bg-white p-4 rounded shadow">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Seu nome</label>
+        <input type="text" class="form-control" id="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Seu email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-white mt-5 pt-4 pb-3">
+    <div class="container">
+      <div class="row info-footer">
+        <div class="col-md-4">
+          <h6>Sobre a Biblioteca</h6>
+          <p>Promovemos o acesso à leitura, cultura e conhecimento para todos os públicos.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Links úteis</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Catálogo Online</a></li>
+            <li><a href="#">Eventos e Oficinas</a></li>
+            <li><a href="#">Voluntariado</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Redes Sociais</h6>
+          <a href="#" class="d-block">Instagram</a>
+          <a href="#" class="d-block">Facebook</a>
+          <a href="#" class="d-block">YouTube</a>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">&copy; 2025 Biblioteca Viva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

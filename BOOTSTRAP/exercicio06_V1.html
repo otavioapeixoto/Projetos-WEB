@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mundo dos Livros</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e355e;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  background: linear-gradient(rgba(30,53,94,0.7), rgba(30,53,94,0.7)), url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h2 {
+  font-size: 2.5em;
+}
+
+.livros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.livro {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.livro:hover {
+  transform: scale(1.05);
+}
+
+.livro img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #1e355e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mundo dos Livros</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Destaques</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Descubra novas histórias</h2>
+    <p>Explore os melhores livros de todos os gêneros</p>
+  </section>
+
+  <main class="livros">
+    <article class="livro">
+      <img src="https://via.placeholder.com/150x220?text=Livro+1" alt="Capa do Livro 1">
+      <h3>O Segredo da Floresta</h3>
+      <p>Aventura • Maria Silva</p>
+    </article>
+    <article class="livro">
+      <img src="https://via.placeholder.com/150x220?text=Livro+2" alt="Capa do Livro 2">
+      <h3>Noites de Inverno</h3>
+      <p>Romance • João Pedro</p>
+    </article>
+    <article class="livro">
+      <img src="https://via.placeholder.com/150x220?text=Livro+3" alt="Capa do Livro 3">
+      <h3>Universo Curioso</h3>
+      <p>Ciência • Carla Dias</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mundo dos Livros. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
