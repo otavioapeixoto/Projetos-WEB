@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varíaveis</title>
+    
+</head>
+<body>
+    <script>
+        var login = prompt('Digite seu nome de usuário:');
+        
+        var user = 'admin';
+        var userpass = '1234';
+
+
+        if(login === user){
+            var senha = prompt('Digite sua senha:');
+            if(senha === userpass){
+             document.write('<p>Acesso Permitido</p>')   
+            }else{
+                document.write('<p>Senha Incorreta</p>')
+            }
+        }
+        else{
+            document.write('<p>Usuário não encontrado</p>') 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+</head>
+<body>
+    <script>
+        var vendedor = prompt('Qual seu nome?');
+        var salario = prompt('Qual seu salário fixo?');
+        var vendas = prompt('Quanto você vendeu em dinheiro?');
+
+        var salarioTotal = parseInt(salario) + parseInt(vendas)*0.15;
+        
+        document.write(vendedor + ', seu salário total é: R$' + parseFloat(salarioTotal))
+    </script>
+</body>
+</html>

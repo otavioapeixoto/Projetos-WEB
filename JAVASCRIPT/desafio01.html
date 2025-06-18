@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var A = 20;
+        var B = 10;
+        var C = "Nula";
+        document.write('<p>A = </p>' + A + '<p>, B = </p>' + B + '<p> e C = </p>' + C + '<br>')
+
+        document.write('<p>A = </p>' + B + '<p>, B = </p>' + A + '<p> e C = </p>' + C + '<br><br>')
+
+        document.write('<p>A = </p>' + A + '<p>, B = </p>' + B + '<p> e C = </p>' + C + '<br>')
+        C = A;
+        A = B;
+        B = C;
+        C = "Nula";
+        document.write('<p>A = </p>' + A + '<p>, B = </p>' + B + '<p> e C = </p>' + C + '<br>')
+    </script>
+    
+</body>
+</html>
