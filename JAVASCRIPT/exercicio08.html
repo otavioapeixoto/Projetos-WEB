@@ -12,20 +12,21 @@
          var c = prompt('Qual o valor de C?');
 
          if(a == 0){
-            document.write('Impossível Calcular')
+            document.write('Impossível Calcular, visto que o valor de A é nulo.')
          }
          else{
             var delta = (b ** 2) - 4*a*c;
             
             if(delta < 0){
-                document.write('Impossível Calcular')
+                document.write('Impossível Calcular, visto que o delta deu um valor negativo. Δ = ' + delta)
             }
             else{
-                var x1 = ((b*-1) + Math.sqrt(delta))/(2*a)
-                var x2 = ((b*-1) - Math.sqrt(delta))/(2*a)
+                var x1 = ((b*-1) + Math.sqrt(delta))/(2*a);
+                var x2 = ((b*-1) - Math.sqrt(delta))/(2*a);
                 
-                document.write('x1 é igual: ' + x1 + '<br>')
-                document.write('x2 é igual: ' + x2)
+                document.write('Delta = ' + delta + '<br>');
+                document.write('x1 = ' + x1 + '<br>');
+                document.write('x2 = ' + x2);
             }
          }
          
