@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10 - Revisão</title>
+</head>
+<body>
+    <script>
+        var operacao = prompt('Digite o símbolo da operção desejada:')
+        var valor1 = prompt('Digite o valor 1:')
+        var valor2 = prompt('Digite o valor 2:')
+
+        switch(operacao){
+            case '+':
+                var result = parseInt(valor1) + parseInt(valor2);
+                document.write('O resultado é: ' + result);
+                break
+            case '-':
+                var result = parseInt(valor1) - parseInt(valor2);
+                document.write('O resultado é: ' + result);
+                break
+            case '/':
+                var result = parseInt(valor1) / parseInt(valor2);
+                document.write('O resultado é: ' + result);
+                break
+            case '*':
+                var result = parseInt(valor1) * parseInt(valor2);
+                document.write('O resultado é: ' + result);
+                break
+        }
+    </script>
+</body>
+</html>

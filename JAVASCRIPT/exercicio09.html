@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09 - Revisão</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Qual o seu nome?');
+        var nota = prompt('Qual sua nota?');
+        var freq = prompt('Qual sua frequência?');
+
+        if(nota >= 7 && freq >= 70){
+            document.write('Parabéns, ' + nome + '! Você passou de ano.')
+        }
+        else if(nota < 7 && freq >= 70){
+            document.write('Sinto muito, ' + nome + '! Você não passou de ano por conta de suas notas.')
+        }
+        else if(nota >= 7 && freq < 70){
+            document.write('Sinto muito, ' + nome + '! Você não passou de ano por conta de sua frequência.')
+        }
+        else if(nota < 7 && freq < 70){
+            document.write('Sinto muito, ' + nome + '! Você não passou de ano por conta de sua frequência e notas.')
+        }
+    </script>
+</body>
+</html>

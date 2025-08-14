@@ -21,11 +21,11 @@
                 document.write('Impossível Calcular')
             }
             else{
-                var x1 = ((b*-1) + delta)/(2*a)
-                var x2 = ((b*-1) - delta)/(2*a)
+                var x1 = ((b*-1) + Math.sqrt(delta))/(2*a)
+                var x2 = ((b*-1) - Math.sqrt(delta))/(2*a)
                 
-                document.write('x1 é igual:' + x1 + '<br>')
-                document.write('x2 é igual:' + x2)
+                document.write('x1 é igual: ' + x1 + '<br>')
+                document.write('x2 é igual: ' + x2)
             }
          }
          

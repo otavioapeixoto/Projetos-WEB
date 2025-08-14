@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+
+<body>
+    <script>
+        function DiferençaPositiva(num1, num2) {
+            var dif = num1 - num2
+            if (num1 < num2) {
+                var pos = dif * -1
+                document.write('O resto dessa subtração é: ' + pos)
+            }
+            else if (num1 >= num2) {
+                document.write('O resto dessa subtração é: ' + dif)
+            }
+        }
+        DiferençaPositiva(prompt('Digite o primeiro valor: '), prompt('Digite o segundo valor: '))
+    </script>
+</body>
+
+</html>

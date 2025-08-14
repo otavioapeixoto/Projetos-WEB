@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11 - Funções</title>
+</head>
+<body>
+    <script>
+        function VerificarNum(num){
+            var resto = num % 2;
+            if(resto == 0){
+                return 'Par'
+            }
+            else if(resto == 1){
+                return 'Ímpar'
+            }
+            }
+        result = VerificarNum(prompt('Número 1:'));
+        document.write('O número escolhido é: ' + result);
+    </script>
+</body>
+</html>
